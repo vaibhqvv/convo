@@ -9,4 +9,6 @@ router.post("/login", login);
 
 router.post("/logout", logout);
 
+router.put("/update-profile",protectRoute, updateProfile);// protectRoute will check the user is authenticated (logged in) or not before letting them update profile
+
 export default router;
